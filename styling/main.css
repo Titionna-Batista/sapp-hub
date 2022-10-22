@@ -1,0 +1,78 @@
+body{
+margin: 0;
+}
+
+nav{
+width: 100%;
+background-color: pink;
+font-size: 25px;
+text-align: center;
+}
+
+nav a, li{
+    text-decoration: none;
+    display: inline;
+    margin-left: 5px;
+}
+
+nav a:hover{
+    text-decoration: underline;
+}
+
+
+.char-list{
+    width: fit-content;
+    display: flex;
+    flex-flow:row wrap;
+    justify-content: space-around;
+    
+}
+
+.char-box{
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+img {
+    width: 200px;
+    height: 300px;
+    border: 5px solid rgb(0, 0, 0);
+    background-color: gray;
+    margin-bottom: 20px;
+}
+
+#john{
+    transition: all 0.5s ease;
+}
+
+#john:hover {
+--dotSize: 0.25rem;
+--bgSize: 1.35rem;
+--bgPosition: calc(var(--bgSize) / 2);
+
+  background-image: radial-gradient(
+      circle at center,
+      #3a0404 var(--dotSize),
+      transparent 0
+    ), radial-gradient(circle at center, #3a0404 var(--dotSize), transparent 0);
+  background-size: var(--bgSize) var(--bgSize);
+  background-position: 0 0, var(--bgPosition) var(--bgPosition);
+  background-color:#5F0B0D;
+}
+
+
+
+/**Halftone**/
+.halftone {
+    transition: all 0.5s ease;
+    background: radial-gradient(circle at center, rgba(0, 0, 0, 0.607) 0.25rem, transparent 0),radial-gradient(circle at center, rgba(0, 0, 0, 0.644) 0.25rem, transparent 0);
+    background-size: 1.3rem 1.3rem;
+    background-repeat: round;
+    background-position: 0 0, 0.65rem 0.65rem;
+  }
+
+/**Text Alignment**/
+
+h1{
+   text-align: center;
+}

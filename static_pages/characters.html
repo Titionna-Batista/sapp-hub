@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAPP Demo 2: Vue</title>
+
+    <!--Stylesheet Link-->
+    <link rel="stylesheet" href="/sapp-hub/styling/main.css">
+
+    <!--Vue Link-->
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+
+</head>
+<body>
+    <div id="app">
+        <h1> {{ title }}</h1>
+        <div class="char-box">
+        <div class="char-list">
+            <!--Images need to be binded!-->
+            <img v-for="image in shadows" :src="image" :key="shadows.id">
+        </div>
+    </div>
+    </div>
+
+
+     <!--JS Links-->
+     
+     <script type="text/javascript" src="/sapp-hub/js/vueversion.js"></script>
+     <script>
+         const mountedApp = app.mount('#app')
+     </script>
+</body>
+
+<!--@mouseover="addFace(images.face)"-->

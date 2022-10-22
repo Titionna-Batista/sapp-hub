@@ -1,14 +1,36 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAPP Demo 1</title>
 
-    </title>
+    <!--Stylesheet Link-->
+    <link rel="stylesheet" href="/sapp-hub/styling/main.css">
+
+    <!--Vue Link-->
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+
+    <!--JS Link for Lluxim and John-->
+    <script type="text/javascript" src="/sapp-hub/js/main.js">
+    </script>
+
 </head>
 <body>
-    <p>Test.</p>
-    <div class="nav-bar">
-        <p> Things will go in here.</p>
+    <nav>
+        <li><a href=index.html>Home</a></li>
+        <li><a href=characters.html>Vue Version</a></li>
+    </nav>
+    <div class="playground flexbox">
+        <h1>Dots Background Test</h1>
+        <div class="char-list">
+            <img id="lluxim" onmouseover="showChar()"
+            onmouseleave="hideChar()" class="char-box" src="/sapp-hub/images/sillhouettes/RosterB.png">
+            <img id="john" class="char-box"  onmouseover="johnShow()" onmouseleave="johnHide()" src="/sapp-hub/images/sillhouettes/RosterC.png">
+            <img class="char-box" src="/sapp-hub/images/sillhouettes/RosterD.png">
+        </div>
     </div>
+
 </body>
 </html>
