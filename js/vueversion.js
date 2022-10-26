@@ -2,25 +2,9 @@ const app = Vue.createApp({
     data(){
         return {
             title: "Vue Image Replication", 
-            shadows: 
+            cards: 
             [
-                { id: 0201, image:"/sapp-hub/images/sillhouettes/RosterB.png"},
-                "/sapp-hub/images/sillhouettes/RosterC.png",
-                "/sapp-hub/images/sillhouettes/RosterD.png",
-                "/sapp-hub/images/sillhouettes/RosterE.png",
-                "/sapp-hub/images/sillhouettes/RosterF.png",
-                "/sapp-hub/images/sillhouettes/RosterG.png",
-            ]
-        }
-    },
-    methods: {
-        /**addFace(imagesFace) {
-            this.face = imagesFace;
-        }**/
-    }
-})
-
-/**{id:0201, shadow:"/sapp-hub/images/sillhouettes/RosterB.png", face:"/sapp-hub/images/characters/RosterB.png"},
+                {id:0201, shadow:"/sapp-hub/images/sillhouettes/RosterB.png", face:"/sapp-hub/images/characters/RosterB.png"},
                 {id:0301, shadow:"/sapp-hub/images/sillhouettes/RosterC.png", face:"/sapp-hub/images/characters/RosterC.png"},
                 {id:0401, shadow:"/sapp-hub/images/sillhouettes/RosterD.png", face:"/sapp-hub/images/characters/RosterD.png"},
                 {id:0501, shadow:"/sapp-hub/images/sillhouettes/RosterE.png", face:"/sapp-hub/images/characters/RosterE.png"},
@@ -31,4 +15,12 @@ const app = Vue.createApp({
                 {id:1001, shadow:"/sapp-hub/images/sillhouettes/RosterJ.png", face:"/sapp-hub/images/characters/RosterJ.png"},
                 {id:1101, shadow:"/sapp-hub/images/sillhouettes/RosterK.png", face:"/sapp-hub/images/characters/RosterK.png"},
                 {id:1201, shadow:"/sapp-hub/images/sillhouettes/RosterL.png", face:"/sapp-hub/images/characters/RosterL.png"},
-                {id:1301, shadow:"/sapp-hub/images/sillhouettes/RosterM.png", face:"/sapp-hub/images/characters/RosterM.png"} */
+                {id:1301, shadow:"/sapp-hub/images/sillhouettes/RosterM.png", face:"/sapp-hub/images/characters/RosterM.png"}
+            ]
+        }
+    },
+    methods: {
+        
+    }
+})
+

@@ -17,10 +17,15 @@
     <div id="app">
         <h1> {{ title }}</h1>
         <div class="char-box">
+        <!--<div class="char-list">
+            <img v-for="image in cards" :src=image.shadow :key="image.id">
+        </div>-->
         <div class="char-list">
-            <!--Images need to be binded!-->
-            <img v-for="image in shadows" :src="image" :key="shadows.id">
+            <img v-for="image in cards"
+             :key="image.id" @mouseover= "image.hover = true" @mouseleave= "image.hover = false"
+             :src="image.hover === true ? image.face: image.shadow">
         </div>
+
     </div>
     </div>
 
@@ -33,4 +38,4 @@
      </script>
 </body>
 
-<!--@mouseover="addFace(images.face)"-->
+<!---->
