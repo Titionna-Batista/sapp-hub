@@ -1,5 +1,6 @@
 body{
 margin: 0;
+
 }
 
 nav{
@@ -31,14 +32,21 @@ nav a:hover{
 .char-box{
     margin-top: 5px;
     margin-left: 10px;
+    /* -webkit-backface-visibility : hidden; 
+    backface-visibility: hidden;
+    -webkit-transform: skew(5deg, 0);
+    transform: skew(5deg, 0);
+    overflow: hidden; */
+    border: 5px solid rgb(0, 0, 0);
 }
 
 img {
     width: 200px;
     height: 300px;
-    border: 5px solid rgb(0, 0, 0);
     background-color: gray;
     margin-bottom: 20px;
+    /* --webkit-transform: skew(-5deg, 0);
+    transform: skew(-5deg, 0); */
 }
 
 #john{
@@ -61,7 +69,6 @@ img {
 }
 
 
-
 /**Halftone**/
 .halftone {
     transition: all 0.5s ease;
@@ -75,4 +82,24 @@ img {
 
 h1{
    text-align: center;
+}
+
+/**Style Container**/
+.style-container{
+    -webkit-backface-visibility : hidden; 
+    backface-visibility: hidden;
+    -webkit-transform: skew(5deg, 0);
+    transform: skew(5deg, 0);
+    overflow: hidden;
+    border: 5px solid rgb(0, 0, 0);
+    background-color: gray;
+    height: 300px;
+    width: 200px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.style-container img{
+    --webkit-transform: skew(-5deg, 0);
+    transform: skew(-5deg, 0);
 }
