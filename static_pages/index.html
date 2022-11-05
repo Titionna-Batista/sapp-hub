@@ -8,6 +8,14 @@
 
     <!--Stylesheet Link-->
     <link rel="stylesheet" href="/sapp-hub/styling/main.css">
+    <link rel="stylesheet" href="/sapp-hub/styling/nav2.css">
+
+    <!--Tailwind Link ((FOR FUTURE BRANCH))-->
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+
+    <!--Hamburger Link-->
+    <link href="/sapp-hub/styling/hamburgers.css" rel="stylesheet">
+   
 
     <!--Vue Link-->
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
@@ -19,8 +27,29 @@
 </head>
 <body>
     <nav>
-        <li><a href=index.html>Home</a></li>
-        <li><a href=characters.html>Vue Version</a></li>
+        <img src="/sapp-hub/images/icons/SAPPLogo-01.png" class="logo" alt="logo of a sun and moon">
+        <button class="hamburger hamburger--squeeze" type="button" onclick="toggleNav()">
+            <span class="hamburger-box">
+              <span class="hamburger-inner"></span>
+            </span>
+          </button>
+          <div id="links">
+            <li><a href=index.html>Home</a></li>
+            <li><a href=characters.html>Vue Version</a></li>
+            <li><a href="index.html">Another Link</a></li>
+            <li><a href="index.html">Another Link</a></li>
+          </div>
+        <!--icon for search bar-->
+            
+            <!-- <div class="search-bar">
+                <li><input id="searchbar" type="text" v-model="input" placeholder="Search characters..."/></li>
+                <button type="submit" id="search-button"><img class="search-icon" src="/sapp-hub/images/svgs/search_5.svg" name="search-button"></button>  -->
+                <!-- <div class="buttons">
+                   <button type="button">Log In</button>
+                   <button type="button"> Sign Up</button>
+                   </div> -->
+            </div>
+             </div>
     </nav>
     <div class="playground flexbox">
         <h1>Dots Background Test</h1>
@@ -43,5 +72,7 @@
         
     </div>
 
+     <!-- Nav JS-->
+     <script type="text/javascript" src="/sapp-hub/js/nav.js"></script>
 </body>
 </html>

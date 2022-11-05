@@ -1,0 +1,88 @@
+/**https://stackoverflow.com/questions/39527485/css3-flexbox-left-and-right-floating-items**/
+
+nav{
+    display: block;
+    font-size: 24px;
+    width: 100%;
+    background-color: firebrick;
+    overflow: hidden;
+}
+
+nav li{
+    display: block;
+}
+
+nav li a{
+    text-decoration: none;
+    float: left;
+    margin-left: 10px;
+    padding: 10px;
+}
+
+nav a:hover{
+text-decoration: underline;
+background-color: blue;
+}
+
+nav .buttons{
+    margin-right: 10px;
+    float: right;
+}
+nav input{
+    font-size: 20px;
+    float: right;
+    margin-left: 8px;
+}
+
+/** ICONS AND BUTTONS**/
+.search-icon{
+    width: 30px;
+    height: 30px;
+    /* float: right; */
+    /* padding: 5px; */
+}
+
+.search-bar{
+    background-color: aqua;
+    width: 25%;
+    float: right;
+    
+}
+
+#searchbar {
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: rgb(210, 212, 211);
+    margin-right: 5px;
+    margin-top: 5%;
+}
+
+.buttons{
+    width: 65%;
+}
+
+#search-button{
+    width: 40px;
+    height: 40px;
+    background-color: rgb(133, 12, 12);
+    margin-top: 5%;
+
+}
+
+
+/** SMALL SCREENS **/
+
+@media screen and (max-width: 500px) {
+    nav{
+        display: flex;
+    }
+
+    nav li{
+       display: flexbox; 
+    }
+
+    .buttons{
+        display: none;
+    }
+    
+}
