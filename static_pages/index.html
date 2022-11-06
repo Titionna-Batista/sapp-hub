@@ -35,8 +35,11 @@
 </head>
 <body>
     <nav>
+        <!--remove the highlight on this one in particular-->
         <div class="topnav">
-        <img src="/sapp-hub/images/icons/SAPPLogo-01.png" class="logo" alt="logo of a sun and moon">
+            <a href="#main">
+        <img src="/sapp-hub/images/icons/SAPPLogo-01.png" class="logo" alt="Skip to main content">
+            </a>
         <button class="hamburger hamburger--squeeze" type="button" onclick="toggleNav()">
             <span class="hamburger-box">
               <span class="hamburger-inner"></span>
@@ -61,23 +64,26 @@
             </div>
              </div>
     </nav>
-    <div class="playground flexbox">
+    <div class="playground flexbox" id="main">
         <h1>DOTS BACKGROUND TEST</h1>
         <div class="char-list">
+          
+            <div class="style-container">
             <img id="lluxim" onmouseover="showChar()"
-            onmouseleave="hideChar()" class="char-box" src="/sapp-hub/images/sillhouettes/RosterB.png">
-            <img id="john" class="char-box"  onmouseover="johnShow()" onmouseleave="johnHide()" src="/sapp-hub/images/sillhouettes/RosterC.png">
-            <img
-            class="char-box" src="/sapp-hub/images/sillhouettes/RosterD.png">
+            onmouseleave="hideChar()" src="/sapp-hub/images/sillhouettes/RosterB.png">
+            </div>
+
+            <div class="style-container">
+            <img id="john" onmouseover="johnShow()" onmouseleave="johnHide()" src="/sapp-hub/images/sillhouettes/RosterC.png">
+            </div>
+            <div class="style-container">
+            <img src="/sapp-hub/images/sillhouettes/RosterD.png">
+            </div>
+            <div class="style-container">
+            <img src="/sapp-hub/images/sillhouettes/RosterE.png">
+            </div>
             <!--<img src="/sapp-hub/images/random/casey_scrnsht.png">-->
             
-            <!--Style Container Test-->
-            <div class="style-container">
-            <img src="/sapp-hub/images/sillhouettes/RosterD.png">
-            </div>
-            <div class="style-container">
-            <img src="/sapp-hub/images/sillhouettes/RosterD.png">
-            </div>
         </div>
         
     </div>

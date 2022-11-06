@@ -4,31 +4,39 @@
 
 body{
 margin: 0;
+background-color: #C7003A;
 
 }
-* {box-sizing: border-box;}
+/* * {box-sizing: border-box;} */
 
 /* For Light/Dark Mode In the Future: 
 https://dev.to/ayc0/light-dark-mode-system-mode-user-preferences-1fcd
 Use App colors as inspiration!*/
 
+.playground{
+    justify-content: center;
+    margin-left: 10px;
+    
+}
+
 .char-list{
     width: fit-content;
     display: flex;
     flex-flow:row wrap;
-    justify-content: space-around;
+    margin-left: 5px;
+    margin-right: 5px;
     
 }
 
 .char-box{
-    margin-top: 5px;
-    margin-left: 10px;
-    /* -webkit-backface-visibility : hidden; 
+     margin-top: 5px;
+    margin-left: 10px; 
+     -webkit-backface-visibility : hidden; 
     backface-visibility: hidden;
     -webkit-transform: skew(5deg, 0);
     transform: skew(5deg, 0);
-    overflow: hidden; */
-    border: 5px solid rgb(0, 0, 0);
+    overflow: hidden; 
+     /* border: 5px solid rgb(0, 0, 0);  */
 }
 
 img {
@@ -85,7 +93,22 @@ h1{
     background-color: gray;
     height: 300px;
     width: 200px;
-    margin-left: 25px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+}
+
+.style-container{
+    -webkit-backface-visibility : hidden; 
+    backface-visibility: hidden;
+    -webkit-transform: skew(5deg, 0);
+    transform: skew(5deg, 0);
+    overflow: hidden;
+    border: 5px solid rgb(0, 0, 0);
+    background-color: gray;
+    height: 300px;
+    width: 200px;
+    margin-left: 10px;
     margin-right: 10px;
     margin-bottom: 20px;
 }
@@ -95,6 +118,7 @@ h1{
     transform: skew(-5deg, 0);
     
 }
+
 
 /* When I move into transformations I can use margin-left: -20px; to shift sillhouette over.*/
 

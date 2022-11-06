@@ -14,19 +14,14 @@
 
 </head>
 <body>
+    
     <div id="app">
         <h1> {{ title }}</h1>
-        <div class="char-box">
-        <!--<div class="char-list">
-            <img v-for="image in cards" :src=image.shadow :key="image.id">
-        </div>-->
-        <div class="char-list">
-            <img v-for="image in cards"
+        <div class="char-box-vue">
+            <img class="style-container" v-for="image in cards"
              :key="image.id" @mouseover= "image.hover = true" @mouseleave= "image.hover = false"
              :src="image.hover === true ? image.face: image.shadow">
         </div>
-
-    </div>
     </div>
 
 
@@ -37,5 +32,3 @@
          const mountedApp = app.mount('#app')
      </script>
 </body>
-
-<!---->

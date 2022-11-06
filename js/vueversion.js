@@ -1,7 +1,7 @@
 const app = Vue.createApp({
     data(){
         return {
-            title: "Vue Image Replication", 
+            title: "VUE IMAGE REPLICATION", 
             cards: 
             [
                 {id:0201, shadow:"/sapp-hub/images/sillhouettes/RosterB.png", face:"/sapp-hub/images/characters/RosterB.png"},
