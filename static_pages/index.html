@@ -15,7 +15,15 @@
 
     <!--Hamburger Link-->
     <link href="/sapp-hub/styling/hamburgers.css" rel="stylesheet">
-   
+
+    <!--Favicon Link-->
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/favicon_package_v0.16/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon_package_v0.16/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon_package_v0.16/favicon-16x16.png">
+    <link rel="manifest" href="/favicon/favicon_package_v0.16/site.webmanifest">
+    <link rel="mask-icon" href="/favicon/favicon_package_v0.16/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#b91d47">
+    <meta name="theme-color" content="#ffffff">
 
     <!--Vue Link-->
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
@@ -27,12 +35,14 @@
 </head>
 <body>
     <nav>
+        <div class="topnav">
         <img src="/sapp-hub/images/icons/SAPPLogo-01.png" class="logo" alt="logo of a sun and moon">
         <button class="hamburger hamburger--squeeze" type="button" onclick="toggleNav()">
             <span class="hamburger-box">
               <span class="hamburger-inner"></span>
             </span>
           </button>
+        </div>
           <div id="links">
             <li><a href=index.html>Home</a></li>
             <li><a href=characters.html>Vue Version</a></li>
@@ -52,7 +62,7 @@
              </div>
     </nav>
     <div class="playground flexbox">
-        <h1>Dots Background Test</h1>
+        <h1>DOTS BACKGROUND TEST</h1>
         <div class="char-list">
             <img id="lluxim" onmouseover="showChar()"
             onmouseleave="hideChar()" class="char-box" src="/sapp-hub/images/sillhouettes/RosterB.png">

@@ -13,7 +13,9 @@ nav a, li {
     .logo{
         margin-bottom: 0px;
     }
-@media screen and (max-width: 500px) {
+
+    
+@media screen and (max-width: 510px) {
     
 
 nav{
@@ -39,14 +41,21 @@ nav a:hover {
 }
 
 .hamburger{
-    display: inline-block;
-    
+    display: block;
+    float: right;
 }
 
 .logo{
     height: 80px;
     width: 80px;
     float: left;
+}
+
+.topnav{
+    width: 100%;
+    margin: auto;
+    height: fit-content;
+    overflow: hidden;
 }
 
 }
