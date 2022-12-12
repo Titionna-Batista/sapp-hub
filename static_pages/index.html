@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="light dark" />
     <title>SAPP Demo 1</title>
 
     <!--Stylesheet Link-->
@@ -40,7 +41,7 @@
             <a href="#main">
         <img src="/sapp-hub/images/icons/SAPPLogo-01.png" class="logo" alt="Skip to main content">
             </a>
-        <button class="hamburger hamburger--squeeze" type="button" onclick="toggleNav()">
+        <button class="hamburger hamburger--squeeze" type="button" onclick="toggleNav()" aria-label="Menu" aria-controls="navigation">
             <span class="hamburger-box">
               <span class="hamburger-inner"></span>
             </span>
@@ -49,7 +50,7 @@
           <div id="links">
             <li><a href=index.html>Home</a></li>
             <li><a href=characters.html>Vue Version</a></li>
-            <li><a href="index.html">Another Link</a></li>
+            <li><a href="legends.html">Legends Archive</a></li>
             <li><a href="index.html">Another Link</a></li>
           </div>
         <!--icon for search bar-->
@@ -68,19 +69,25 @@
         <h1>DOTS BACKGROUND TEST</h1>
         <div class="char-list">
           
-            <div class="style-container">
-            <img id="lluxim" onmouseover="showChar()"
-            onmouseleave="hideChar()" src="/sapp-hub/images/sillhouettes/RosterB.png">
+            <div class="style-container" onmouseover="showChar()" onmouseleave="hideChar()">
+            <img id="lluxim" 
+            src="/sapp-hub/images/sillhouettes/RosterB.png">
             </div>
 
-            <div class="style-container">
-            <img id="john" onmouseover="johnShow()" onmouseleave="johnHide()" src="/sapp-hub/images/sillhouettes/RosterC.png">
+            <div class="style-container" onmouseover="johnShow()" onmouseleave="johnHide()">
+            <img id="john" src="/sapp-hub/images/sillhouettes/RosterC.png">
             </div>
             <div class="style-container">
             <img src="/sapp-hub/images/sillhouettes/RosterD.png">
             </div>
             <div class="style-container">
             <img src="/sapp-hub/images/sillhouettes/RosterE.png">
+            </div>
+            <div class="style-container">
+            <img src="/sapp-hub/images/sillhouettes/RosterF.png">
+            </div>
+            <div class="style-container">
+            <img src="/sapp-hub/images/sillhouettes/RosterG.png">
             </div>
             <!--<img src="/sapp-hub/images/random/casey_scrnsht.png">-->
             

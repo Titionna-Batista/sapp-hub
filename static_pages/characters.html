@@ -4,10 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="light dark" />
     <title>SAPP Demo 2: Vue</title>
 
     <!--Stylesheet Link-->
     <link rel="stylesheet" href="/sapp-hub/styling/main.css">
+
+    <!--Nav Link-->
+    <link rel="stylesheet" href="/sapp-hub/styling/nav2.css">
 
     <!--Vue Link-->
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
@@ -16,6 +20,19 @@
 <body>
     
     <div id="app">
+        <nav> <!--remove the highlight on this one in particular-->
+            <div class="topnav">
+                <a href="#main">
+            <img src="/sapp-hub/images/icons/SAPPLogo-01.png" class="logo" alt="Skip to main content">
+                </a>
+            <button class="hamburger hamburger--squeeze" type="button" onclick="toggleNav()" aria-label="Menu" aria-controls="navigation">
+                <span class="hamburger-box">
+                  <span class="hamburger-inner"></span>
+                </span>
+              </button>
+            </div>
+            <a v-for="links in nav" :key="links.id" :href="links.route">{{ links.copy }}</a>
+        </nav>
         <h1> {{ title }}</h1>
         <div class="char-box-vue">
             <img class="style-container" v-for="image in cards"

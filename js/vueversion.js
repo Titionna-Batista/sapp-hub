@@ -1,7 +1,13 @@
 const app = Vue.createApp({
     data(){
         return {
-            title: "VUE IMAGE REPLICATION", 
+            title: "VUE IMAGE REPLICATION",
+            nav: [
+                {id:0101, copy:"Home", route:"/sapp-hub/static_pages/index.html"},
+                {id:0102, copy:"Vue Version", route:"/sapp-hub/static_pages/characters.html"},
+                {id:0103, copy:"Legends Archive", route:"/sapp-hub/static_pages/legends.html"},
+                {id:0104, copy:"Another Link", route:"/sapp-hub/static_pages/index.html"}
+            ], 
             cards: 
             [
                 {id:0201, shadow:"/sapp-hub/images/sillhouettes/RosterB.png", face:"/sapp-hub/images/characters/RosterB.png"},

@@ -1,15 +1,17 @@
 
 //Lluxim Elements//
 function showChar() {
-var element = document.getElementById("lluxim");
-element.src = "/sapp-hub/images/characters/RosterB.png"
+var element = document.getElementsByClassName("style-container")[0];
+var image = document.getElementById("lluxim")
+image.src = "/sapp-hub/images/characters/RosterB.png"
 element.style.backgroundColor = "red";
 element.classList.add("halftone");
 }
 
 function hideChar() {
-   var element = document.getElementById("lluxim");
-   element.src = "/sapp-hub/images/sillhouettes/RosterB.png";
+   var element = document.getElementsByClassName("style-container")[0];
+   var image = document.getElementById("lluxim")
+   image.src = "/sapp-hub/images/sillhouettes/RosterB.png";
    element.style.backgroundColor = "gray";
    element.classList.remove("halftone");  
 }
