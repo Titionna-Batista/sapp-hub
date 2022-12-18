@@ -57,6 +57,11 @@ img {
     transform: skew(-5deg, 0); */
 }
 
+#id-card{
+width: auto;
+margin-left: 25%;
+}
+
 .style-container:nth-child(2){
     transition: all 0.5s ease;
 }

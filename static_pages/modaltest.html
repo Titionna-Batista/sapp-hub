@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="color-scheme" content="light dark" />
-    <title>SAPP Demo 1</title>
+    <title>Modal Demo</title>
 
     <!--Stylesheet Link-->
     <link rel="stylesheet" href="/sapp-hub/styling/main.css">
@@ -66,44 +66,25 @@
             </div>
              </div>
     </nav>
-    <div class="playground flexbox" id="main">
-        <h1>DOTS BACKGROUND TEST</h1>
-        <div class="char-list">
-          
-            <div class="style-container" onmouseover="showChar()" onmouseleave="hideChar()" onclick="showModal()">
-            <img id="lluxim" 
-            src="/sapp-hub/images/sillhouettes/RosterB.png">
-            </div>
-
-            <div class="style-container" onmouseover="johnShow()" onmouseleave="johnHide()">
-            <img id="john" src="/sapp-hub/images/sillhouettes/RosterC.png">
-            </div>
-            <div class="style-container">
-            <img src="/sapp-hub/images/sillhouettes/RosterD.png">
-            </div>
-            <div class="style-container">
-            <img src="/sapp-hub/images/sillhouettes/RosterE.png">
-            </div>
-            <div class="style-container">
-            <img src="/sapp-hub/images/sillhouettes/RosterF.png">
-            </div>
-            <div class="style-container">
-            <img src="/sapp-hub/images/sillhouettes/RosterG.png">
-            </div>
-            <!--<img src="/sapp-hub/images/random/casey_scrnsht.png">-->
-            
-        </div>
-        
-        
-    </div>
-
+    
     <img id="id-card" src="../images/random/Mellow_ID_Fixed-18.png">
 
-    <div class="modal">
-      <h2>Test</h2>
-      <div class="style-container-modal">
-        <img src="../images/characters/RosterL.png">
+    <div class="modal modal-halftone">
+        <!--Alignment Icon-->
+        <span id="alignment"></span>
+        <!--Character Name-->
+      <h2 class="char-name">BOSS</h2>
+      <!--Character Image: Will Use JS to generate specific person once example is completed-->
+      <div class="img-container-modal">
+        <img class="imgface" src="../images/characters/RosterL.png">
+        <img class="imgshadow" src="../images/sillhouettes/RosterL.png">
       </div>
+      <!--Character Information-->
+      <div class="char-info">
+        <!--Divs with lists-->
+      </div>
+      <!--Character Occuptation-->
+      <span class="designation-mocal"></span>
     </div>
 
      <!-- Nav JS-->

@@ -1,0 +1,77 @@
+/*ROOT VARIABLES*/
+:root {
+    /*Will only be declared in real thing, no values*/
+    --modalBG: #84B040;
+    --modalHT: #5F7D2D;
+    --charBG: #7DAE66;
+    --charHT: #7E7940;
+    --borderStrokeClr: #3C2F14;
+}
+
+.modal {
+    background-color: var(--modalBG);
+    border-radius: 5px;
+    width: 700px;
+    margin: auto;
+    position: static;
+    z-index: -2;
+
+}
+
+.modal-halftone {
+    --dotSize: 0.25rem;
+    --bgSize: 1.3rem;
+    --bgPosition: calc(var(--bgSize/2))rem;
+    --stop1: 0.06rem;
+    --stop2: 0.65rem;
+
+    background-image: radial-gradient(
+        circle at center,
+        var(--modalHT) var(--dotSize),
+        transparent 0
+      ), radial-gradient(circle at center, var(--modalHT) 0.25rem, transparent 0);
+    background-size: var(--bgSize) var(--bgSize);
+    background-position: 0 0, 0.65rem 0.65rem;
+    background-color:var(--modalBG);
+  }
+
+  .modal::after {
+    mask-image: linear-gradient(rgb(218, 34, 34), rgb(0 0 0 / 0.5));
+  }
+
+
+.imgface{
+    position: absolute;
+    z-index: 1;
+}
+.imgshadow{
+    position: relative;
+    z-index: 0;
+    margin-left: -1%;
+}
+
+
+.modal h2{
+    font-size: 50px;
+    font-family: 'boom_comic_fontregular';
+    text-align: center;
+    color: black;
+}
+
+@media screen and (max-width: 600px) {
+#id-card{
+    overflow: hidden;
+    margin: auto;
+}
+
+.modal{
+    width: 500px;
+}
+
+}
+
+
+
+/* .style-container-modal{
+    border: 5px black;
+} */
